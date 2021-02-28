@@ -8,7 +8,7 @@ case $3 in
     ;;
 
     GrayScott)
-    mpirun -np $1 ../benchmarks/$2/gray_scott
+    mpirun -np $1 ../benchmarks/$2/2_gray_scott/gray_scott
     ;;
 
     VortexInCell)

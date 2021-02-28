@@ -1,6 +1,9 @@
 SUBDIRS := $(wildcard */.)
 
-clean all: $(SUBDIRS)
+all clean run: $(SUBDIRS)
 
 $(SUBDIRS):
 	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+.PHONY: all clean $(SUBDIRS)
+

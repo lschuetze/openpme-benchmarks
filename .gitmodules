@@ -1,0 +1,3 @@
+[submodule "implementations/ReBench"]
+	path = implementations/ReBench
+	url = git@github.com:smarr/ReBench.git

@@ -21,4 +21,5 @@ run: all
 
 clean:
 	rm -f *.o *~ core gray_scott *.vtk
+	rm -f ../*~ ../*.vtk
 

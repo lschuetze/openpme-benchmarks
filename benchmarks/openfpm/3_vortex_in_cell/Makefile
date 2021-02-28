@@ -28,5 +28,5 @@ run: vic_petsc_test
 .PHONY: clean all
 
 clean:
-	rm -f *.o *~ core vic *.vtk checkpoint *.hdf5
-
+	rm -f *.o *~ core vic *.vtk check_point *.hdf5 output*
+	rm -f ../*~ core vic ../*.vtk ../check_point ../*.hdf5 ../output*

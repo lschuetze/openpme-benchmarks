@@ -3,8 +3,12 @@
 # CORES $1, SUITE $2, BENCHMARK $3
 
 case $3 in 
-    LennardJones)
-    mpirun -np $1 1_lennard_jones/gray_scott
+    LennardJonesCL)
+    mpirun -np $1 1_lennard_jones/md_dyn
+    ;;
+
+    LennardJonesVL)
+    mpirun -np $1 1_lennard_jones/md_dyn_vl
     ;;
 
     GrayScott)

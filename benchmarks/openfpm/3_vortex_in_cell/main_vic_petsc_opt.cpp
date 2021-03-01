@@ -716,7 +716,7 @@ template<typename vector, typename grid> void check_point_and_save(vector & part
 
 	part_save.map();
 
-	particles.save("check_point");
+	//particles.save("check_point");
 }
 
 int main(int argc, char* argv[])

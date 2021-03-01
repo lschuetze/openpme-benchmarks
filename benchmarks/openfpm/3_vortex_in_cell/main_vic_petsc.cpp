@@ -1166,7 +1166,7 @@ template<typename vector, typename grid> void check_point_and_save(vector & part
 	part_save.map();
 
 	// Save and HDF5 file for checkpoint restart
-	particles.save("check_point");
+	//particles.save("check_point");
 }
 
 /*! \page Vortex_in_cell_petsc Vortex in Cell 3D

@@ -3,6 +3,6 @@ set -e
 pushd `dirname $0` > /dev/null
 SCRIPT_PATH=`pwd`
 popd > /dev/null
+USER_BASE_PATH=`python3 -m site --user-base`
 # Script start
-cd ./implementations/ReBench
-python3 -m rebench.rebench --clean $SCRIPT_PATH/bench.conf s:openfpm
+$USER_BASE_PATH/bin/rebench --clean $SCRIPT_PATH/bench.conf s:openfpm

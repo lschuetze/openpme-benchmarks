@@ -4,8 +4,8 @@ The purpose is to compare the performance of [OpenPME](https://github.com/Nesrin
 ## Requirements
 To run the benchmark the following requirements have to be fulfilled. Please make sure that all dependencies are installed:
 - **OpenFPM**
-    - Follow the instructions on their [website](http://openfpm.mpi-cbg.de/install#intro-wrapper)
-    - After installing OpenFPM, copy the generated `example.mk` into the root folder of this benchmark. The file can be found in the root folder of the examples of your local OpenFPM installation.
+    - Follow the instructions on the OpenFPM [website](http://openfpm.mpi-cbg.de/install#intro-wrapper)
+    - After installing OpenFPM, copy the generated `example.mk` into the `benchmarks` folder. The file can be found in the root folder of the examples of your local OpenFPM installation.
 - **ReBench**
     - `git submodule update --init`
 

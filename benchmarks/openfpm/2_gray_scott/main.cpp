@@ -122,7 +122,7 @@ int main(int argc, char* argv[])
 	double dv = 1*1e-5;
 
 	// Number of timesteps
-        size_t timeSteps = 5000;
+    size_t timeSteps = 5000;
 
 	// K and F (Physical constant in the equation)
         double K = 0.053;

@@ -85,11 +85,7 @@ float nu = 1.0/tgtre;
 // float dt = 0.0025 for Re 7500
 float dt = 0.0125;
 
-#ifdef TEST_RUN
 const unsigned int nsteps = 10;
-#else
-const unsigned int nsteps = 10001;
-#endif
 
 // All the properties by index
 constexpr unsigned int vorticity = 0;

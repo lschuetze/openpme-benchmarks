@@ -15,10 +15,14 @@ openpme_GS <- read.table(here(sourceDir, "../data/benchmark-openpme-GS.data"), h
                          sep = "\t", col.names = row_names, fill = TRUE)
 openpme_VIC12 <- read.table(here(sourceDir, "../data/benchmark-openpme-VIC12.data"), header = FALSE,
                          sep = "\t", col.names = row_names, fill = TRUE)
-openpme_VIC12_OPT <- transform(openpme_VIC12_OPT, Benchmark = "VortexInCellOpt")
+openpme_VIC12_OPT <- transform(openpme_VIC12, Benchmark = "VortexInCellOpt")
+openpme_VIC48 <- read.table(here(sourceDir, "../data/benchmark-openpme-VIC48.data"), header = FALSE,
+                            sep = "\t", col.names = row_names, fill = TRUE)
+openpme_VIC48_OPT = transform(openpme_VIC48, Benchmark = "VortexInCellOpt")
 
 data <- rbind(openfpm_all, openpme_LJ, openpme_LJ_VL,
-              openpme_GS, openpme_LJ_VL, openpme_VIC12, openpme_VIC12_OPT)
+              openpme_GS, openpme_LJ_VL, openpme_VIC12,
+              openpme_VIC12_OPT, openpme_VIC48, openpme_VIC48_OPT)
 
 data <- data %>% filter(Unit == "ms")
 data <- transform(data, Value = Value / 1000)

@@ -1,0 +1,12 @@
+#!/net/home/lschuetze/.local/bin/rebench --clean /net/home/lschuetze/repos/openpme-benchmarks/bench.conf s:openpme:VortexInCell
+# Execution Start: 2021-03-03T13:13:00.983726+00:00
+# Environment: {"userName": "lschuetze", "manualRun": true, "hostName": "smalltalk", "osType": "Linux", "cpu": "Intel(R) Core(TM) i7-9700T CPU @ 2.00GHz", "clockSpeed": 2000000000, "memory": 33405210624, "software": [{"name": "kernel", "version": "#46-Ubuntu SMP Fri Jul 10 00:24:02 UTC 2020"}, {"name": "kernel-release", "version": "5.4.0-42-generic"}, {"name": "architecture", "version": "x86_64"}], "denoise": {}}
+# Source: {"repoURL": "git@github.com:lschuetze/openpme-benchmarks.git", "branchOrTag": "HEAD -> main, origin/main, origin/HEAD", "commitId": "a6d4edf14b6b7beb55c439461dfec6f6ece82d0d", "commitMsg": "Fix cleanup in conf\n", "authorName": "Lars Schu\u0308tze", "committerName": "Lars Schu\u0308tze", "authorEmail": "lars.schuetze@tu-dresden.de", "committerEmail": "lars.schuetze@tu-dresden.de"}
+1	1	916292.000000	kb	MaxRSS	VortexInCell	parallel	openpme		4		
+1	1	4787840.000000	ms	total	VortexInCell	parallel	openpme		4		
+2	1	915728.000000	kb	MaxRSS	VortexInCell	parallel	openpme		4		
+2	1	3385730.000000	ms	total	VortexInCell	parallel	openpme		4		
+1	1	506252.000000	kb	MaxRSS	VortexInCell	parallel	openpme		8		
+1	1	7708460.000000	ms	total	VortexInCell	parallel	openpme		8		
+2	1	505668.000000	kb	MaxRSS	VortexInCell	parallel	openpme		8		
+2	1	7696980.000000	ms	total	VortexInCell	parallel	openpme		8		

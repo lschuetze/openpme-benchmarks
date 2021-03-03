@@ -99,7 +99,7 @@ int main(int argc, char* argv[])
   // Commands
   double nu = (1 / 3000);
   double dt = 0.0125;
-  vorticity_mesh.load("init_vort_double.hdf5");
+  vorticity_mesh.load("./3_vortex_in_cell/init_vort_double.hdf5");
   // Remesh
   particles.clear();
   auto remesh_iterator_d0a = particles.getGridIterator(vorticity_mesh.getGridInfo().getSize());

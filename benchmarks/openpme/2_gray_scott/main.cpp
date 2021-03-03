@@ -64,7 +64,7 @@ int main(int argc, char* argv[])
     New.template get<Vn>(loopNodeM) = 0.0;
     ++mloop_iterator_g0a;
   }
-  Old.load("init_mesh.hdf5");
+  Old.load("./2_gray_scott/init_mesh.hdf5");
   Old.template ghost_get<Uo, Vo>();
   int i = 0;
   

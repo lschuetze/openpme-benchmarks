@@ -1,0 +1,20 @@
+#!/net/home/lschuetze/.local/bin/rebench --clean /net/home/lschuetze/repos/openpme-benchmarks/bench.conf s:openpme:LennardJonesCL
+# Execution Start: 2021-03-03T09:19:59.629395+00:00
+# Environment: {"userName": "lschuetze", "manualRun": true, "hostName": "smalltalk", "osType": "Linux", "cpu": "Intel(R) Core(TM) i7-9700T CPU @ 2.00GHz", "clockSpeed": 2000000000, "memory": 33405210624, "software": [{"name": "kernel", "version": "#46-Ubuntu SMP Fri Jul 10 00:24:02 UTC 2020"}, {"name": "kernel-release", "version": "5.4.0-42-generic"}, {"name": "architecture", "version": "x86_64"}], "denoise": {}}
+# Source: {"repoURL": "git@github.com:lschuetze/openpme-benchmarks.git", "branchOrTag": "HEAD -> main, origin/main, origin/HEAD", "commitId": "22e272a630f61983cc98840be26af96cca9928fd", "commitMsg": "Provide data\n", "authorName": "Lars Schu\u0308tze", "committerName": "Lars Schu\u0308tze", "authorEmail": "lars.schuetze@tu-dresden.de", "committerEmail": "lars.schuetze@tu-dresden.de"}
+1	1	21268.000000	kb	MaxRSS	LennardJonesCL	parallel	openpme		1		
+1	1	32180.000000	ms	total	LennardJonesCL	parallel	openpme		1		
+2	1	21160.000000	kb	MaxRSS	LennardJonesCL	parallel	openpme		1		
+2	1	32110.000000	ms	total	LennardJonesCL	parallel	openpme		1		
+1	1	21552.000000	kb	MaxRSS	LennardJonesCL	parallel	openpme		4		
+1	1	10440.000000	ms	total	LennardJonesCL	parallel	openpme		4		
+2	1	21396.000000	kb	MaxRSS	LennardJonesCL	parallel	openpme		4		
+2	1	10510.000000	ms	total	LennardJonesCL	parallel	openpme		4		
+1	1	21872.000000	kb	MaxRSS	LennardJonesCL	parallel	openpme		8		
+1	1	7850.000000	ms	total	LennardJonesCL	parallel	openpme		8		
+2	1	21868.000000	kb	MaxRSS	LennardJonesCL	parallel	openpme		8		
+2	1	8040.000000	ms	total	LennardJonesCL	parallel	openpme		8		
+1	1	21168.000000	kb	MaxRSS	LennardJonesCL	parallel	openpme		2		
+1	1	16840.000000	ms	total	LennardJonesCL	parallel	openpme		2		
+2	1	21460.000000	kb	MaxRSS	LennardJonesCL	parallel	openpme		2		
+2	1	16790.000000	ms	total	LennardJonesCL	parallel	openpme		2		

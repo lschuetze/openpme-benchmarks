@@ -1,0 +1,24 @@
+include ../../example.mk
+
+CC=mpic++
+
+LDIR =
+
+OBJ = main.o
+
+%.o: %.cpp
+	$(CC) -O3 -mavx  -g -c --std=c++14 -Wno-ignored-attributes  -o  $@ $< $(INCLUDE_PATH)
+
+gray_scott: $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS_PATH) $(LIBS)
+
+all: gray_scott
+
+run: all
+	mpirun --oversubscribe -np 4 ./gray_scott
+
+.PHONY: clean all run
+
+clean:
+	rm -f *.o *~ core gray_scott
+

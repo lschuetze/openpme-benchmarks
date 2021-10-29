@@ -1,25 +1,9 @@
-include ../../example.mk
+SUBDIRS := $(wildcard */.)
 
-CC=mpic++
+all clean run: $(SUBDIRS)
 
-LDIR =
+$(SUBDIRS):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
 
-OBJ = main.o
-
-%.o: %.cpp
-	$(CC) -O3 -g -c --std=c++14 -o $@ $< $(INCLUDE_PATH)
-
-gray_scott: $(OBJ)
-	$(CC) -o $@ $^ $(CFLAGS) $(LIBS_PATH) $(LIBS)
-
-all: gray_scott
-
-run: all
-	mpirun -np 4 ./gray_scott
-
-.PHONY: clean all run
-
-clean:
-	rm -f *.o *~ core gray_scott *.vtk
-	rm -f ../*~ ../*.vtk
+.PHONY: all clean $(SUBDIRS)
 

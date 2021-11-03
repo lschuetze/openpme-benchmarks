@@ -1,4 +1,4 @@
-include ../../example.mk
+include ../../../example.mk
 
 ### internally the example disable with the preprocessor its code if not compiled with nvcc 
 

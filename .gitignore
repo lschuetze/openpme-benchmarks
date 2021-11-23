@@ -4,3 +4,4 @@ benchmark.data
 *.vtk
 *.hdf5
 check_point
+.DS_Store
